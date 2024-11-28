@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  // 1. 请编写一段逻辑将任意数字数组处理后返回一个新数组，其中不包含任何重复的元素。
+  // 例子: [1, 2, 3, 4, 2, 1] => [1, 2, 3, 4]
+  // 数组去重
+  // 方法一：循环
+  // let arr1 = [1, 1, 2, 3, 3, 2, 4, 5, 6, 4, 5, 6]
+  // let arr2 = []
+  // for (let i = 0; i < arr1.length; i++) {
+  //   let isRepeated = false
+  //   for (let j = 0; j < arr2.length; j++) {
+  //     if (arr2[j] === arr1[i]) {
+  //       isRepeated = true
+  //       break
+  //     }
+  //   }
+  //   if (!isRepeated) {
+  //     arr2.push(arr1[i])
+  //   }
+  // }
+  // console.log(arr2);
+  // 方法二：indexOf
+  // let arr1 = [1, 1, 2, 3, 3, 2, 4, 5, 6, 4, 5, 6]
+  // let arr2 = []
+  // for (let i = 0; i < arr1.length; i++) {
+  //   if (arr2.indexOf(arr1[i]) === -1) {
+  //     arr2.push(arr1[i])
+  //   }
+  // }
+  // console.log(arr2);
+
+  // 方法三：set
+  let arr1 = [1, 1, 2, 3, 3, 2, 4, 5, 6, 4, 5, 6]
+  let arr2 = [...new Set(arr1)]
+  document.write(`${arr1}去重后变为${arr2}`)
+</script>
+
+</html>

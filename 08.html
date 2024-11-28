@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  // 8. 请编写一段逻辑编在一个数组检索一个目标值返回目标值在数组中的索引。
+  // 如果目标值不存在于数组中，则返回 - 1。（两种方法）
+  // 例子: [1, 2, 3] 、 1 => 0
+  // 例子: [1, 2, 3] 、 4 => -1
+  // 方法一：indexOf
+  let arr = [1, 3, 5, 7, 9]
+  let n = +prompt('数组[1, 3, 5, 7, 9],输入你想检索的值')
+  let num = arr.indexOf(n)
+  if (num === -1) {
+    document.write('找不到')
+  } else {
+    num++
+    document.write(`${n}在数组[${arr}]中的第${num}个`)
+  }
+</script>
+
+</html>

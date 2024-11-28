@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  // 4. 请编写一段逻辑生成一个长度为 15 的斐波那契数列的数组([1, 1, 2, 3, 5, 8...])
+  let n = prompt('输入生成斐波那契数列的数组的长度')
+  let a = []
+  for (let i = 0; i < n; i++) i <= 1 ? a.push(1) : a.push(a[a.length - 1] + a[a.length - 2])
+  // document.write(a)
+  document.write(` [${a}] `)
+</script>
+
+</html>
