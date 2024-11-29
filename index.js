@@ -111,18 +111,21 @@
 
 // 有一个任意的数字数组arr，随机取一个元素target，把小于等于target的元素放在数组的左边，把大于target的元素放在数组的右边
 // let arr = [12, 11, 23, 1, 2, 12, 45, 56, 123, 1, 23, 78]
-// let arr = [12, 11, 23, 1, 2, 12, 45, 56, 123, 1, 23, 78]
-// let target = 23
-// for(let i=0;i<arr.length;i++){
-//   if(arr[i]<=target){
-//     let o = arr[i]
-    
-//     arr.splice(i,1)
-//     arr.unshift(o)
-//   }
-// }
-
-// console.log(arr);
+let arr = [12, 11, 23, 1, 2, 12, 45, 56, 123, 1, 23, 78]
+let target = 23
+let beforeArr = []
+let backArr = []
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] <= target) {
+    beforeArr.push(arr[i])
+  } else {
+    backArr.push(arr[i])
+  }
+}
+let newArr = beforeArr.concat(backArr)
+// console.log(beforeArr);
+// console.log(backArr);
+console.log(newArr);
 
 
 
