@@ -15,6 +15,9 @@
   // 例子: 'how are you' => 3
   let str = 'As President Xi Jinping wrapped up his trip to Latin America last week'
   let newStr = str.split(' ')
+  let reg = /[a-zA-Z]+/g
+  console.log(str.match(reg));
+
   console.log(newStr);
   document.write(`字符串 '${str}' 的单词计数是${newStr.length}`)
 </script>
